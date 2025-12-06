@@ -1,0 +1,171 @@
+/* --- Общие стили и Сброс --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Светлый фон */
+    color: #333;
+}
+
+/* --- Шапка (Header) --- */
+header {
+    background-color: #004d99; /* Насыщенный синий */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Золотой при наведении */
+}
+
+/* --- Основной Контент (Main) --- */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004d99;
+}
+
+/* --- Сетка Товаров --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain; /* Чтобы изображение не обрезалось */
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.price {
+    display: block;
+    font-size: 1.5em;
+    color: #cc0000; /* Красный для цены */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0088cc;
+}
+
+/* --- Контакты --- */
+.contact-section {
+    background-color: #e9ecef;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact-section a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* --- Футер (Footer) --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* --- Адаптивность для мобильных устройств --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* На мобильных устройствах товары в один столбец */
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шевроны и Магниты — Ваш Магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💎 Шевроны и Магниты</h1>
+        <nav>
+            <a href="#chevrones">Шевроны</a>
+            <a href="#magnets">Магниты</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="chevrones" class="product-section">
+            <h2>⚔️ Наши Шевроны</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="placeholder_chevron.jpg" alt="Шеврон 'Орел'">
+                    <h3>Шеврон "Орел"</h3>
+                    <p>Вышивка, 8x10 см. Идеально для формы.</p>
+                    <span class="price"> 150грн </span>
+                    <button onclick="showDetails('Шеврон Орел')">Показать Детали</button>
+                </div>
+                <div class="product-card">
+                    <img src="placeholder_chevron2.jpg" alt="Шеврон 'Флаг'">
+                    <h3>Шеврон "Флаг"</h3>
+                    <p>ПВХ, 5x8 см. Крепление липучка.</p>
+                    <span class="price">420 грн</span>
+                    <button onclick="showDetails('Шеврон Флаг')">Показать Детали</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="magnets" class="product-section">
+            <h2>🧲 Наши Магниты</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="placeholder_magnet.jpg" alt="Магнит 'Город'">
+                    <h3>Магнит "Город"</h3>
+                    <p>Керамика, d=6 см. Память о путешествии.</p>
+                    <span class="price">150 грн </span>
+                    <button onclick="showDetails('Магнит Город')">Показать Детали</button>
+                </div>
+                <div class="product-card">
+                    <img src="placeholder_magnet2.jpg" alt="Магнит 'Котик'">
+                    <h3>Магнит "Котик"</h3>
+                    <p>Мягкий ПВХ, 7x7 см. Для любителей кошек.</p>
+                    <span class="price">200грн</span>
+                    <button onclick="showDetails('Магнит Котик')">Показать Детали</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>📞 Контакты</h2>
+            <p>Чтобы сделать заказ, свяжитесь с нами удобным для вас способом:</p>
+            <ul>
+                <li>**Email:** <a href="mailto:yeva.andreyevna1998@gmail.com">yeva.andreyevna1998@gmail.com</a></li>
+                <li>**Телефон:** <a href="tel:+380980868080">+380 98 086 80 80</a></li>
+                <li>**Адрес:** Кам"янське вул.Харківська 45 </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Шевроны и Магниты. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
