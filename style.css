@@ -9,7 +9,8 @@ body {
 
 /* --- Шапка (Header) --- */
 header {
-    background-color: #004d99; /* Насыщенный синий */
+    background-color: #004d99; /* Насыщенный жолтый
+    */
     color: white;
     padding: 20px 40px;
     display: flex;
@@ -168,4 +169,5 @@ footer {
     .product-grid {
         grid-template-columns: 1fr; /* На мобильных устройствах товары в один столбец */
     }
+
 }
